@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+
+/* TELA PRINCIPAL */
+.geral {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    width: 930px;
+    /* altura removida: agora o grid se ajusta ao conteúdo */
+
+    margin: 5px auto;
+}
+
+
+/* BLOCO VERDE */
+.bloco1 {
+    background-color: #42e6d0;
+
+    height: 100%;   /* estica para acompanhar a altura da coluna da direita */
+
+    padding: 40px;
+
+    position: relative;
+}
+
+
+/* SETA */
+.link-seta {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 45px;
+    width: 18px;
+    height: 18px;
+}
+
+.seta {
+    width: 18px !important;
+    height: 18px !important;
+
+    max-width: 18px;
+    max-height: 18px;
+
+    object-fit: contain;
+    display: block;
+}
+
+
+/* EFEITO DA SETA */
+.seta:hover {
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+
+/* PARTE DIREITA */
+.conteudo-direita {
+    background-color: white;
+
+    padding: 60px 45px 30px 45px;
+}
+
+
+/* TÍTULO */
+.titulo {
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+
+/* SUBTÍTULO */
+.subtitulo {
+    font-size: 12px;
+
+    color: #333;
+
+    margin-bottom: 30px;
+}
+
+
+/* TEXTO */
+.texto-topo-p3 {
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #333;
+
+    margin-bottom: 25px;
+}
+
+
+/* LINHA */
+hr {
+    border: none;
+
+    border-top: 1px solid #ddd;
+
+    margin-bottom: 30px;
+}
+
+
+/* IMAGEM */
+.box-imagem-p3 {
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.imagem-p3 {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+}
